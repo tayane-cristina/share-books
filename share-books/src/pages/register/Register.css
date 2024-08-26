@@ -1,3 +1,4 @@
+/*Estilo para dispositivos móveis*/
 .div-register {
     font-family: "Work Sans", sans-serif;
 }
@@ -44,4 +45,27 @@
     border-radius: 5px;
     font-size: 15px;
 
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
+    .principal-div {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .div-register{
+        font-size: 19px;
+    }
+
+    .form-register-page {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    .btn-register {
+        font-size: 20px;
+    }
 }
