@@ -6,10 +6,21 @@ const Register = () => {
 
     const [displayName, setDisplayName] = useState("")
     const [email, setEmail] = useState("")
-    const [birthday, setBirthday] = ("")
-    const [password, setPassword] = ("")
-    const [passwordConfirm, setPasswordConfirm] = ("")
+    const [birthday, setBirthday] = useState("")
+    const [password, setPassword] = useState("")
+    const [passwordConfirm, setPasswordConfirm] = useState("")
 
+    const createRegister = () => {
+
+        alert('Seu cadastro foi realizado com sucesso')
+
+        setDisplayName("")
+        setEmail('')
+        setBirthday('')
+        setPassword('')
+        setPasswordConfirm('')
+    }
+ 
     return (
         <div className='principal-div div-register'>
             <p>Você ama livros? Cadastre-se agora em nosso site e compartilhe seus interesses literários com uma comunidade apaixonada! Descubra novos títulos, troque recomendações e conecte-se com outros leitores. Junte-se a nós e deixe sua paixão por livros inspirar novas conexões!</p>
@@ -66,7 +77,7 @@ const Register = () => {
                 <span>A senha precisa ter uma letra minúscula</span>
                 <span>A senha precisa ter um símbulo</span>
 
-                <button className='btn-register' type='submit'>Cadastrar</button>
+                <button className='btn-register' type='submit' onClick={createRegister}>Cadastrar</button>
 
             </form>
         </div>
