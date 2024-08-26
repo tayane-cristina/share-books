@@ -1,0 +1,47 @@
+.div-register {
+    font-family: "Work Sans", sans-serif;
+}
+
+.div-register p{
+ width: 80%;
+ margin: 10px auto;
+
+}
+
+
+.form-register-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-register-page input{
+    width: 80%;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.form-register-page label{
+    font-weight: 700;
+    
+}
+
+.form-register-page span {
+    margin: 5px;
+}
+
+
+.btn-register{
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
