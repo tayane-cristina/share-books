@@ -44,17 +44,19 @@
     border: none;
     border-radius: 5px;
     font-size: 15px;
+    cursor: pointer;
+}
 
+.btn-register {
+    background-color: rgb(5, 87, 5);
 }
 
 /* Estilos para telas maiores */
 @media (min-width: 768px) {
-    .principal-div {
-        max-width: 500px;
-        margin: auto;
-    }
 
     .div-register{
+        max-width: 500px;
+        margin: auto;
         font-size: 19px;
     }
 
