@@ -16,7 +16,7 @@ const Login = () => {
             </section>
 
             <div className='div-login-data'>
-                <h3>Login</h3>
+                <h3 className='login-page-h3'>Login</h3>
                 <span>Faça o seu login, e comece a compartilhar suas experiências!</span>
                 <form className='form-page-login'>
 

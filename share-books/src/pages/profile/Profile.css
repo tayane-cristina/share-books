@@ -1,0 +1,74 @@
+/*Estilo para dispositivos móveis*/
+.div-profile {
+    background-color: rgba(128, 128, 128, 0.308);
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page-aside{
+
+}
+
+.user-infor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.user-name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+.img-profile{
+    border-radius: 50%;
+}
+
+.user-description{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.user-description-item{
+    list-style: none;
+}
+
+
+/* Estilos para telas maiores */
+@media (min-width: 1024px) {
+    .profile-page-aside{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 25px;
+        background-color: grey;
+        width: 15%;
+        height: 100%;
+        margin-left: 25px;
+    }
+    
+    .user-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    
+    .user-description-item{
+        list-style: none;
+    }
+    
+    .img-profile {
+        border-radius: 50%;
+    }
+    
+    .user-name {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
