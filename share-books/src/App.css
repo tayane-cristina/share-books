@@ -13,3 +13,14 @@
   margin-left: 25px;
 }
 
+.profile-and-navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  cursor: pointer;
+}
+
