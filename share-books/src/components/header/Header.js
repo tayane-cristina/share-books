@@ -11,13 +11,13 @@ const Header = () => {
     return (
         <div className="principal-div div-header">
             <div className='header'>
-                <h2 className='div-home-logo'>Pesquise Autores</h2>
+             <Link to="/"><h2  className='div-home-logo'>Pesquise Autores</h2></Link> 
                 
             </div>
             
             <section className='navbar'>
                 <ul className='header-navbar-ul'>
-                    <li className='navbar-link'><Link to="">Autores</Link></li>
+                    <li className='navbar-link'><Link to="/author">Autores</Link></li>
                     <li className='navbar-link'><Link to="">Resenhas</Link></li>
                     <li className='navbar-link'><Link to="">Destaques</Link></li>
                     <li className='navbar-link'><Link to="">Quiz</Link></li>

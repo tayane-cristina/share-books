@@ -1,0 +1,27 @@
+.div-filter {
+    
+}
+
+.more-options-filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.item-filter-option{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 3px solid rgba(235, 230, 225, 0.349);
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.item-filter-option:hover {
+    border-bottom: 3px solid chocolate;
+    
+}

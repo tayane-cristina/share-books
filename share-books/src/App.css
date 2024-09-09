@@ -25,7 +25,7 @@ a{
 /*Telas maiores*/
 @media only screen and (min-width: 1025px) {
   .principal-div{
-    background-color: antiquewhite;
+    background-color: rgba(235, 230, 225, 0.349);
     width: 70%;
     margin: auto;
     padding: 10px;
