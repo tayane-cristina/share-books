@@ -12,10 +12,7 @@ const Header = () => {
         <div className="principal-div div-header">
             <div className='header'>
                 <h2 className='div-home-logo'>Pesquise Autores</h2>
-                <section className='section-home-search'>
-                    <input type='text' placeholder='Search...' ></input>
-                    <button className='search-btn'>Pesquisar</button>
-                </section>
+                
             </div>
             
             <section className='navbar'>

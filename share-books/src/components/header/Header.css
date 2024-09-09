@@ -9,6 +9,7 @@ div-header{
 
 .header{
     width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,28 +27,8 @@ div-header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+   
 
-}
-
-.section-home-search input{
-    width: 70%;
-    border: none;
-    font-size: 15px;
-    padding: 10px;
-}
-
-.section-home-search button {
-    background-color: rgb(82, 126, 221);
-    color: white;
-    font-weight: 600;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.section-home-search button:hover {
-    background-color: rgb(64, 103, 231);
 }
 
 .navbar{
