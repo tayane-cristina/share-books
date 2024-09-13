@@ -19,8 +19,8 @@ const Header = () => {
                 <ul className='header-navbar-ul'>
                     <li className='navbar-link'><Link to="/author">Autores</Link></li>
                     <li className='navbar-link'><Link to="">Resenhas</Link></li>
-                    <li className='navbar-link'><Link to="">Destaques</Link></li>
-                    <li className='navbar-link'><Link to="">Quiz</Link></li>
+                    <li className='navbar-link'><Link to="highlights">Destaques</Link></li>
+                    <li className='navbar-link'><Link to="/quiz">Quiz</Link></li>
                 </ul>
             </section>
         </div>

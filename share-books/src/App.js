@@ -5,6 +5,8 @@ import axios from 'axios'
 import { useState } from 'react';
 import Home from './pages/home/Home';
 import Author from './pages/author/Author';
+import Quiz from './pages/quiz/Quiz';
+import Highlights from './pages/highlights/Highlights';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/author' element={<Author />} />
+          <Route path='/quiz' element={<Quiz />} />
+          <Route path='/highlights' element={<Highlights />} />
         </Routes>
      
       </div>

@@ -1,0 +1,21 @@
+/*Estilo para telas menores*/
+
+
+
+/*Estilos para telas maiores*/
+@media (min-width: 1024px) { 
+
+    .highlight-option{
+        background-color: violet;
+    }
+
+    .highlight-theme{
+
+    }
+
+    .highlight-question{
+
+    }
+
+
+}

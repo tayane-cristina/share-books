@@ -1,0 +1,37 @@
+/*Estilo para telas menores*/
+
+
+
+
+
+/*Estilo para telas maiores*/
+@media (min-width: 1024px) { 
+
+    .div-quiz{
+        height: auto;
+    }
+
+    .quiz-option{
+        background-color: rgba(182, 64, 9, 0.158);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        margin: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .quiz-theme{
+        font-size: 28px;
+    }
+
+    .question-description{
+        font-size: 21px;
+    }
+
+
+
+}
