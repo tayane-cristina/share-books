@@ -6,6 +6,31 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
     const [search, setSearch] = useState("")
+    const [activeButton, setActiveButton] = useState(null);
+
+    const pageList = [
+                {
+                    page: "Autores",
+                    route: "author"
+                },
+                {
+                    page: "Resenhas",
+                    route: "review"
+                },
+                {
+                    page: "Destaques",
+                    route: "highlights"
+                },
+                {
+                    page: "Quiz",
+                    route: "quiz"
+                },
+            ]
+
+
+    const handleActiveButton = (buttonId) => {
+        setActiveButton(buttonId)
+    }
 
 
     return (
@@ -17,10 +42,21 @@ const Header = () => {
             
             <section className='navbar'>
                 <ul className='header-navbar-ul'>
-                    <li className='navbar-link'><Link to="/author">Autores</Link></li>
+                    {pageList.map((pageLink, index) => (
+                        <li
+                        key={index}
+                        onClick={() => handleActiveButton(index)}
+                        className={`navbar-link ${activeButton === index ? "active" : ""}`}
+                        >
+                            <Link to={`/${pageLink.route}`}>{pageLink.page}</Link>
+                        </li>
+                    ))}
+
+
+                   {/* <li className='navbar-link'><Link to="/author">Autores</Link></li>
                     <li className='navbar-link'><Link to="">Resenhas</Link></li>
                     <li className='navbar-link'><Link to="highlights">Destaques</Link></li>
-                    <li className='navbar-link'><Link to="/quiz">Quiz</Link></li>
+                    <li className='navbar-link'><Link to="/quiz">Quiz</Link></li>*/}
                 </ul>
             </section>
         </div>

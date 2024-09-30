@@ -1,5 +1,6 @@
 import React from 'react';
 import './Quiz.css'
+import QuizLogic from './quizLogic/QuizLogic';
 
 const Quiz = () => {
 
@@ -23,6 +24,8 @@ return(
             <p className='question-description'>Você é apaixonado por poesia? 🌹📝 Chegou a hora de testar sua alma literária! Explore os versos dos grandes mestres, sinta a força das palavras e descubra o quanto você sabe sobre o universo da literatura poética. 📜✨ Faça o quiz e mergulhe no mundo dos poetas, das rimas e das emoções profundas. Está preparado para esse desafio poético? 🎶💫</p>
         </section>
     </div>
+
+   
 </div>
 
 )

@@ -7,6 +7,8 @@ div-header{
     justify-content: center;
 }
 
+
+
 .header{
     width: 100%;
     margin: auto;
@@ -128,10 +130,20 @@ div-header{
     
     .navbar-link{
         list-style: none;
-        border-bottom: 2px solid antiquewhite;
+        border-bottom: 2px solid rgb(245, 245, 245);
         transition: 0.5s;
         font-size: 20px;
+        
     
+    }
+
+    .active {
+        background-color: rgba(235, 100, 10, 0.747);
+        border-radius: 5px;
+    }
+
+    .active a {
+        color: white;
     }
     
     .navbar-link:hover {
