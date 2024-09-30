@@ -10,9 +10,31 @@ const Author = () => {
 
     const [filterActive, setFilterActive] = useState();
 
-    const alterFilterActive = () => {
+    const filteroptions = [
+        {filter: "Nacionalidade", route: "NacionalFilter"},
+        {filter: "Período", route: "PeriodFilter"},
+        {filter: "Genêro Literário", route: "GenderFilter"},
+        {filter: "Estilo Literário", route: "LiteraryStyleFilter"}
+    ]
 
+    const handleFilterActive = (optionId) => {
+        setFilterActive(optionId)
     }
+
+    const showChoseCategory = () => {
+            switch(filterActive) {
+                case 0:
+                    return <NacionalFilter />;
+                case 1:
+                    return <PeriodFilter />;
+                case 2:
+                    return <GenderFilter />;
+                case 3:
+                    return <LiteraryStyleFilter />;
+                default:
+                    return null; 
+            }
+        }
 
     return(
         <div className='principal-div div-author'>
@@ -27,17 +49,20 @@ const Author = () => {
                 <fieldset>
                     <legend>Filtro</legend>
                     <ul className='filter-list-options'>
-                        <li className='filter-option'>Nacionalidade</li>
-                        <li className='filter-option'>Período</li>
-                        <li className='filter-option'>Genêro literário</li>
-                        <li className='filter-option'>Estilo Literário</li>
+                        {filteroptions.map((filterOpt, index) => (
+                            <li
+                                key={index} 
+                                className={`filter-option ${filterActive === index ? "active" : ""}`}
+                                onClick={() => handleFilterActive(index)}
+                            >
+                                {filterOpt.filter}
+                            </li>
+                        ))}
                     </ul>
                 </fieldset>
             </section>
 
-            <section className='more-filter'>
-                <PeriodFilter />
-            </section>
+            {showChoseCategory()}
             
         </div>
     )
