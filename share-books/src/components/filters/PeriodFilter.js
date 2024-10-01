@@ -1,22 +1,29 @@
-import React from 'react';
-import './Filter.css'
+import {useState, React}  from 'react';
+import './Filter.css';
+
 
 const PeriodFilter = () => {
+
+    const [activeComponent, setActiveComponent] = useState(null);
+    const periodOptions = ['Classicismo', 'Romantismo', 'Realismo', 'Naturalismo', 'Simbolismo', 'Modernismo', 'Pós-modernismo', 'Barroco', 'Iluminismo', 'Pré-modernismo']
+
+    const handleActiveComponent = (componentId) => {
+        setActiveComponent(componentId)
+    } 
 
 return(
 <div className='principal-div div-periodFilter div-filter'>
     <h2>Filtrar por genêro Período </h2>
         <ul className='more-options-filter'>
-            <li className='item-filter-option'>Classicismo</li>
-            <li className='item-filter-option'>Romantismo</li>
-            <li className='item-filter-option'>Realismo</li>
-            <li className='item-filter-option'>Naturalismo</li>
-            <li className='item-filter-option'>Simbolismo</li>
-            <li className='item-filter-option'>Modernismo</li>
-            <li className='item-filter-option'>Pós-modernismo</li>
-            <li className='item-filter-option'>Barroco</li>
-            <li className='item-filter-option'>Iluminismo</li>
-            <li className='item-filter-option'>Pré-modernismo</li>
+            {periodOptions.map((periodOpt, index) => (
+                <li 
+                    key={index} 
+                    className={`item-filter-option ${activeComponent === index ? "active" : ""}`}
+                    onClick={() => handleActiveComponent(index)}
+                >
+                    {periodOpt}
+                </li>
+            ))}
         </ul>
 </div>
 

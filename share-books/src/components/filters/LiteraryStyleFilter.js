@@ -1,22 +1,29 @@
-import React from 'react';
+import {useState, React} from 'react';
 import './Filter.css'
 
 const LiteraryStyleFilter = () => {
+
+    const [activeComponent, setActiveComponent] = useState(null);
+    const styleOptions = ["Descritivo", "Narrativo", "Dissertativo", "Persuasivo", "Lírico", "Fluente de Consciência", "Minimalista", "Simbolista", "Realista", "Expressionista"]
+
+    const handleActiveComponent = (componentId) => {
+        setActiveComponent(componentId)
+    } 
 
 return(
 <div className='principal-div div-literaryStyleFilter div-filter'>
     <h2>Filtrar por Estilo literário</h2>
         <ul className='more-options-filter'>
-            <li className='item-filter-option'>Descritivo</li>
-            <li className='item-filter-option'>Narrativo</li>
-            <li className='item-filter-option'>Dissertativo</li>
-            <li className='item-filter-option'>Persuasivo</li>
-            <li className='item-filter-option'>Lírico</li>
-            <li className='item-filter-option'>Fluente de consciência</li>
-            <li className='item-filter-option'>Minimalista</li>
-            <li className='item-filter-option'>Simbolista</li>
-            <li className='item-filter-option'>Realista</li>
-            <li className='item-filter-option'>Expressionista</li>
+            {styleOptions.map((styleOpt, index) => (
+                 <li 
+                    key={index}
+                    className={`item-filter-option ${activeComponent === index ? "active" : ""}`}
+                    onClick={() => handleActiveComponent(index)}
+                >
+                    {styleOpt}
+                </li>
+            ))}
+           
         </ul>
 
 </div>
